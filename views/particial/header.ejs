@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sample Site</title>
+
+	<link rel="stylesheet" href="https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=8784">
+	<style>
+		body { padding-top:50px; }
+	</style>
+</head>
+<body>
+
+<span id="up"></span>
+
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <a class="uk-navbar-item uk-logo" href="#">PIZZA API</a>
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="/">
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="/json/">
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                    Json
+                </a>
+            </li>
+
+            <li>
+                <a href="/gallery/">
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                    gallery
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="uk-navbar-item">
+            <form method="POST" action="/lister/">
+                <input class="uk-input uk-form-width-small" type="text" placeholder="99" name="numb">
+                <button type="submit" class="uk-button uk-button-default">Search</button>
+            </form>
+        </div>
+
+    </div>
+
+<a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#down" uk-scroll>Down</a>
+</nav>
+<div class="uk-container">
