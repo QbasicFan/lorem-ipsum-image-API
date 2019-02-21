@@ -1,0 +1,29 @@
+
+<%- include particial/header.ejs %>
+
+
+<div class="uk-child-width-expand@s " uk-grid>
+
+			<% person.forEach(function(p){ %>
+
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="<%= p.image %>" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title"><%= p.name %></h3>
+                <p>$<%= p.price %> , <%= p.ind %></p>
+            </div>
+        </div>
+    </div>
+
+
+<% }) %>
+</div>
+
+
+<p>
+
+
+<%- include particial/footer.ejs %>
