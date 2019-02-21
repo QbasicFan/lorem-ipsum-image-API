@@ -1,0 +1,29 @@
+
+<%- include particial/header.ejs %>
+
+
+<div class="uk-child-width-expand@s " uk-grid>
+
+
+
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="<%= person.image %>" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title"><%= person.name %></h3>
+                <p>$<%= person.price %> , <%= person.ind %></p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<p>
+
+
+<%- include particial/footer.ejs %>
