@@ -6,7 +6,6 @@ generator of lorem ipsum images API
 
 ///
 
-I need to finsh this app
-
+work in progress
 
 ///
